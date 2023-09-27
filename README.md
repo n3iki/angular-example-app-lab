@@ -28,4 +28,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Jälkeenpäin lisätty otsikko
 
-Ja sille teksti.
+Ja sille teksti.# angular-example-app-lab
+ Harjoitusrepositorio LAB-ammattikorkeakoulun CI/CD-kurssille.
