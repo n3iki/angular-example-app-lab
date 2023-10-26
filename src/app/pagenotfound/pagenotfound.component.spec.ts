@@ -20,4 +20,17 @@ describe('PagenotfoundComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should display "404 - Page not found"', () => {
+    fixture.detectChanges();
+    const errorMessageElement = fixture.nativeElement.querySelector('h1');
+    expect(errorMessageElement.textContent).toContain('404 - Page not found');
+  });
+
+  it('should display a link to home page', () => {
+    fixture.detectChanges();
+    const componentHTML = fixture.nativeElement;
+    const anchorElement = componentHTML.querySelector('a[href="/home"]');
+    expect(anchorElement).toBeTruthy();
+  });
 });

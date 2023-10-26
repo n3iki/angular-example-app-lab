@@ -1,6 +1,7 @@
-import { TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -32,4 +33,33 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('.content span')?.textContent).toContain('angular-example-app app is running!');
   });
+
+  it('should render toolbar text "Dev-ops-kurssin harjoitusprojekti"', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    const toolbarText = compiled.querySelector('.toolbar')?.textContent;
+    expect(toolbarText).toContain('Dev-ops-kurssin harjoitusprojekti');
+  });
+
+});
+
+describe('PagenotfoundComponent', () => {
+  let fixture: ComponentFixture<PagenotfoundComponent>;
+  let component: PagenotfoundComponent;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [PagenotfoundComponent],
+    });
+
+    fixture = TestBed.createComponent(PagenotfoundComponent);
+    component = fixture.componentInstance;
+  });
+
+  it('should create the PagenotfoundComponent', () => {
+    expect(component).toBeTruthy();
+  });
+
+
 });
