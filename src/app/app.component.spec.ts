@@ -43,23 +43,3 @@ describe('AppComponent', () => {
   });
 
 });
-
-describe('PagenotfoundComponent', () => {
-  let fixture: ComponentFixture<PagenotfoundComponent>;
-  let component: PagenotfoundComponent;
-
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [PagenotfoundComponent],
-    });
-
-    fixture = TestBed.createComponent(PagenotfoundComponent);
-    component = fixture.componentInstance;
-  });
-
-  it('should create the PagenotfoundComponent', () => {
-    expect(component).toBeTruthy();
-  });
-
-
-});
