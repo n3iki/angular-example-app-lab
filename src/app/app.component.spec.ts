@@ -1,9 +1,9 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
-import { AppComponent } from './app.component';
-import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { ComponentFixture, TestBed } from "@angular/core/testing";
+import { RouterTestingModule } from "@angular/router/testing";
+import { AppComponent } from "./app.component";
+import { PagenotfoundComponent } from "./pagenotfound/pagenotfound.component";
 
-describe('AppComponent', () => {
+describe("AppComponent", () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
@@ -15,36 +15,36 @@ describe('AppComponent', () => {
     }).compileComponents();
   });
 
-  it('should create the app', () => {
+  it("should create the app", () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-example-app'`, () => {
+  it("should have as title 'angular-example-app'", () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-example-app');
+    expect(app.title).toEqual("angular-example-app");
   });
 
-  it('should render title', () => {
+  it("should render title", () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-example-app app is running!');
+    expect(compiled.querySelector(".content span")?.textContent).toContain("angular-example-app app is running!");
   });
 
-  it('should render toolbar text "Dev-ops-kurssin harjoitusprojekti"', () => {
+  it("should render toolbar text \"Dev-ops-kurssin harjoitusprojekti\"", () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    const toolbarText = compiled.querySelector('.toolbar')?.textContent;
-    expect(toolbarText).toContain('Dev-ops-kurssin harjoitusprojekti');
+    const toolbarText = compiled.querySelector(".toolbar")?.textContent;
+    expect(toolbarText).toContain("Dev-ops-kurssin harjoitusprojekti");
   });
 
 });
 
-describe('PagenotfoundComponent', () => {
+describe("PagenotfoundComponent", () => {
   let fixture: ComponentFixture<PagenotfoundComponent>;
   let component: PagenotfoundComponent;
 
@@ -57,7 +57,7 @@ describe('PagenotfoundComponent', () => {
     component = fixture.componentInstance;
   });
 
-  it('should create the PagenotfoundComponent', () => {
+  it("should create the PagenotfoundComponent", () => {
     expect(component).toBeTruthy();
   });
 
