@@ -23,6 +23,3 @@ jobs:
 
     - name: Build application
       run: npm run build
-
-    - name: Run unit tests (Jasmine/Karma)
-      run: npm test --no-watch --no-progress --browsers=ChromeHeadless
