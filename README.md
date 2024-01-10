@@ -64,7 +64,7 @@ Workflow on tehty kaikki yhteen Build/Test/Docker -workflowiin. Workflowissa kä
 
 ## Muuta
 
-Testit menevät läpi ja image/kontti luodaan onnistuneesti joka kerta, kun mainiin pushataan mitään.
+Testit menevät läpi ja dockerimage luodaan onnistuneesti joka kerta, kun mainiin pushataan mitään.
 
 Dockerkonttia ei julkaista missään pilvipalvelussa resurssien loppumisen vuoksi.
 Huomasin myös, että sovellus käännetään nyt kahdesti: kerran testejä varten ja toisen kerran docker imagen luomiseen. Tämän varmaan voisi jotenkin optimoida paremmin.
