@@ -41,5 +41,5 @@ jobs:
         push: true
         tags: n3iki/my-angular-app:testi
       env:
-        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }} 
+        DOCKER_USERNAME: n3iki
+        DOCKER_PASSWORD: BBHKatam11223344
